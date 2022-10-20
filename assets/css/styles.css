@@ -1,0 +1,374 @@
+/*=============== GOOGLE FONTS ===============*/
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: #ffffff;
+  --green-color: #cafc01;
+  --black-light: #27262b;
+  --black-color: #1e1e1e;
+  --violet-color: #b153e0;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 33px;
+  --h2-font-size: 33px;
+  --biggest-font-size: 19px;
+  --normal-font-size: 16px;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-extrabold: 800;
+}
+
+/* Responsive typography */
+/* @media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+} */
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--black-color);
+  color: var(--text-color);
+  transition: .3s; /* For animation dark mode */
+}
+
+h1, h2 {
+  font-size: var(--h1-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1230px;
+  margin: 0 auto 0;
+  padding: 0 15px 0 ;
+}
+
+
+.section {
+  padding: 64px 0 0;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.section__title span {
+  color: var(--second-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+}
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal*/
+}
+.green {
+  color: var(--green-color);
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: relative;
+  background-color: var(--black-light);
+}
+.header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%); 
+  top: 0;
+  background: var(--black-light);
+  z-index: -1;
+}
+.header__logo {
+  font-weight: var(--font-bold);
+  font-size: 24px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+.header__nav {
+  width: 880px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 30px;
+}
+.header__ul {
+  display: flex;
+  gap: 49px;
+}
+
+.header__link {
+  font-size: var(--normal-font-size);
+  opacity: .7;
+}
+.header__link-signin, .header__link-signup {
+  font-weight: var(--font-bold);
+}
+.header__ul-register {
+  gap: 36px;
+}
+
+/*=============== HOME ===============*/
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home__text {
+  width: 597px;
+  max-width: 100%;
+  margin: 0 0 43px;
+}
+.home__text span {
+  position: relative;
+}
+.home__text span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 5px;
+  right: 0;
+  background: var(--violet-color);
+  z-index: -1;
+}
+
+.btn {
+  font-size: 19px;
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+  background-color: var(--green-color);
+  border-radius: 8px;
+  letter-spacing: 1.2%;
+  padding: 16px 0;
+  width: 287px;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
+.home__text-btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 0;
+  font-size: var(--biggest-font-size);
+}
+.home__text-btn:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: var(--font-bold);
+}
+/*=============== COMPANYS ===============*/
+.company {
+  position: relative;
+  background-color: var(--violet-color);
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 49px auto 0;
+}
+.company::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%); 
+  top: 0;
+  background: var(--violet-color);
+  z-index: -1;
+}
+
+
+
+/*=============== About ===============*/
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.about__img {
+  width: 619px;
+  height: 579px;
+  margin-left: 100px;
+}
+.about__text {
+  width: 622px;
+  max-width: 100%;
+  color: var(--white-color);
+  margin: 100px auto   0 ;
+  /* background: radial-gradient(50% 50% at 50% 50%, #1E1E1E 0%, #131218 100%); */
+}
+.about__text-title span {
+  position: relative;
+  
+} 
+.about__text-title span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 2px;
+  right: 0;
+  background: var(--violet-color);
+  z-index: -1;
+}
+
+.about__text-subtitle {
+  margin: 24px 0 24px;
+  font-weight: var(--font-bold);
+  font-size: var(--biggest-font-size);
+}
+.about__text-text {
+  margin: 0 0 24px;
+  line-height: 24px;
+}
+.about__text-text span {
+  font-weight: var(--font-bold);
+}
+
+.message {
+  position: absolute;
+  top: 43px;
+  right: 20px;
+}
+/*=============== WORK ===============*/
+
+.work__title {
+  text-align: center;
+  margin:  0 0 40px;
+}
+
+
+/*=============== CAN ===============*/
+
+.can__title {
+  text-align: center;
+  margin: 0 0 36px;
+}
+.can__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+.can__item {
+  background: var(--black-light);
+  color: var(--green-color);
+  padding: 16px 55px;
+  font-size: var(--normal-font-size);
+  line-height: 24px;
+  cursor: pointer;
+}
+.can__item:nth-child(1) {
+  border-radius: 8px 0 0 8px;
+}
+.can__item:nth-child(3) {
+  border-radius: 0 8px 8px 0;
+}
+.can__item.active {
+  background: var(--green-color);
+  color: var(--black-color);
+}
+/*Rotate icon and add shadows*/
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== SUBSCRIBE ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+
+
+/* For 2K & 4K resolutions */
