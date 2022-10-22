@@ -47,6 +47,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   transition: .3s; /* For animation dark mode */
+  overflow-x: hidden;
 }
 
 h1, h2 {
