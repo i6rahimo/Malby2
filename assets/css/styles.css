@@ -16,10 +16,11 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
+  --biggest-font-size: 23px;
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 33px;
   --h2-font-size: 33px;
-  --biggest-font-size: 19px;
+  --big-font-size: 19px;
   --normal-font-size: 16px;
 
   /*========== Font weight ==========*/
@@ -225,7 +226,7 @@ button {
   align-items: center;
   gap: 30px;
   margin: 40px 0 0;
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
 }
 .home__text-btn:nth-child(2) {
   display: flex;
@@ -306,7 +307,7 @@ button {
 .about__text-subtitle {
   margin: 24px 0 24px;
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
 }
 .about__text-text {
   margin: 0 0 24px;
@@ -368,7 +369,7 @@ button {
   margin: 49px 0 0;
 }
 .can__step {
-  width: 262px;
+  width: 290px;
   max-width: 100%;
   text-align: center;
   color: var(--white-color);
@@ -411,7 +412,7 @@ button {
 }
 .accordion__item-title {
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
+  font-size: var(--bigggest-font-size);
   position: relative;
   left: -10px;
 }
@@ -491,7 +492,7 @@ button {
   max-width: 384px;
   padding: 16px 24px;
   border: 1px solid var(--green-color);
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
   font-weight: var(--font-bold);
 }
 
@@ -697,6 +698,7 @@ button {
 }
 .step__text-title {
   margin: 0 0 24px;
+  font-size: 28px;
 }
 .step__text-text {
   line-height: 25px;
@@ -726,7 +728,7 @@ button {
 }
 .steps__item p:nth-child(1) {
   margin: 24px 0 8px;
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
   font-weight: var(--font-bold);
 }
 .steps__item p:nth-child(2) {
@@ -753,9 +755,10 @@ button {
 }
 .stages__title-title {
   margin: 0 0 24px;
+  font-size: 28px;
 }
 .stages__title-subtitle {
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
   font-weight: var(--font-bold);
   line-height: 24px;
   letter-spacing: .4px;
@@ -774,14 +777,15 @@ button {
   padding: 24px 16px;
   width: 810px;
   max-width: 100%;
+  margin: auto;
 }
 
 .stages__item-title {
   display: flex;
   gap: 8px;
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
-  margin: 0 0 16px;
+  font-size: var(--big-font-size);
+  margin: 0 0 16px -7px;
 }
 .stages__item-text {
   font-size: var(--normal-font-size);
@@ -795,6 +799,7 @@ button {
 .period__title {
   text-align: center;
   margin: 0 0 36px;
+  font-size: 28px;
 }
 .period__wrapper {
   position: relative;
@@ -865,9 +870,6 @@ button {
   align-items: flex-start;
   gap: 10px;
   width: 100%;
-}
-.whom__item-text p span {
-  
 }
 .whom__item-text p:not(:last-child) {
   margin: 0 0 10px;
@@ -1002,14 +1004,15 @@ button {
     margin: 40px 0 0;
     gap: 40px;
   }
- @media screen and (max-width: 961px) {
+} 
+@media screen and (max-width: 961px) {
   :root {
     --biggest-font-size: 18px;
+    --big-font-size: 16px;
     --h1-font-size: 28px;
     --h2-font-size: 28px;
     --normal-font-size: 14px;
   }
-} 
 }
 
 @media (max-width: 661px) {
