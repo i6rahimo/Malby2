@@ -773,6 +773,7 @@ button {
   border-radius: 8px;
   padding: 24px 16px;
   width: 810px;
+  max-width: 100%;
 }
 
 .stages__item-title {
@@ -855,22 +856,35 @@ button {
   font-weight: var(--font-regular);
   line-height: 150%;
 }
-
 .whom__stages {
   width: 808px;
   max-width: 100%;
 }
 .whom__item-text p{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  width: 100%;
 }
+.whom__item-text p span {
+  
+}
+.whom__item-text p:not(:last-child) {
+  margin: 0 0 10px;
+}
+
 .stages-dot {
-  width: 7px;
-  height: 7px;
+  min-width: 7px ;
+  min-height: 7px ;
+  margin: 8px 0 0;
   background-color: var(--white-color);
   border-radius: 100%;
-  display: block;
+  display: inline-flex;
+}
+.whom__period {
+  width: 841px;
+  max-width: 100%;
+  margin: 36px  auto 0 ;
 }
 
 
