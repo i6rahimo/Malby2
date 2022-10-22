@@ -746,7 +746,7 @@ button {
   margin: 115px auto 0;
 }
 .stages__title {
-  width: 950px;
+  width: 810px;
   max-width: 100%;
   margin: auto;
   text-align: center;
@@ -758,18 +758,21 @@ button {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   line-height: 24px;
+  letter-spacing: .4px;
 }
 
 .stages__items {
-  margin: 36px 0 0;
+  margin: 36px auto 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 36px;
 }
 .stages__item {
   background-color: var(--black-light);
   border-radius: 8px;
   padding: 24px 16px;
+  width: 810px;
 }
 
 .stages__item-title {
@@ -817,6 +820,59 @@ button {
 .how-work-message {
   top: 30%;
 }
+
+/* ==============  WHOM ======================= */
+
+.whom__steps  {
+  margin: 22px 0 40px;
+}
+.whom__steps .can__item {
+  width: 287px;
+  max-width: 100%;
+}
+.whom__steps .can__item:nth-child(2) {
+  border-radius: 0 8px 8px 0;
+}
+.whom__step-text {
+  width: 810px;
+}
+.whom__step-text p {
+  font-weight: var(--font-bold);
+}
+
+.whom__items {
+  display: flex;
+  margin: 40px 0 36px;
+  gap: 40px;
+}
+.whom__item {
+  display: flex;
+  text-align: start;
+  gap: 8px;
+}
+
+.whom__item p {
+  font-weight: var(--font-regular);
+  line-height: 150%;
+}
+
+.whom__stages {
+  width: 808px;
+  max-width: 100%;
+}
+.whom__item-text p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stages-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--white-color);
+  border-radius: 100%;
+  display: block;
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
@@ -923,6 +979,14 @@ button {
   }
   .how-work-message {
     top: 13%;
+  }
+  .whom__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0 0;
+    gap: 40px;
   }
  @media screen and (max-width: 961px) {
   :root {
