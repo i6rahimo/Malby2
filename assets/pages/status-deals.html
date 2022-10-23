@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Мои сделки</title>
+    <title>Статус сделки</title>
 </head>
 <body>
     <header class="header container" id="header">
@@ -54,55 +54,71 @@
     <div class="page">
     <main class="main deals-main">
         <section class="deals__banner-wrapper container">
-            <div class="deals__banner">
-                <p class="deal__banner-text">Мои сделки</p>
-                <a href="create-deals.html" class="btn deals__banner-btn">Создать сделку</a>
+            <div class="deals__banner deals__status-banner">
+                <p class="deal__banner-text deal__banner-text-status">Статус сделки: <span class="deals-status">На согласовании</span></p>
+                <div class="deals-progress">
+                    <span class="deals-progress-fill"></span>
+                </div>
+                <a href="create-deals.html" class="btn deals-btn-arbitraj">Арбитраж</a>
             </div>
         </section>
-        <div class="deals__frame-wrapper container">
-            <div class="deals__frame">
-                <a href="#" class="deals__btn btn">Подтвердить участие</a>
-                <div class="deals__frame-content">
-                    <div class="deals__frame-item">
-                        <p>Номер сделки</p>
-                        <span class="deals__frame-number">#4443434</span>
+
+        <section class="deals__result-wrapper container">
+            <div class="deals__result">
+                <p class="deals__result-title">Расчет суммы сделки с учетом комиссии</p>
+                <div class="deals__result-items">
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Название сделки</p>
+                        <p class="deals__result-item-result">АРЕНА АФК | 190 ЛВЛ | Глава 37 | 286 M СИЛЫ | 10 VIP | S607 / 34 ВОЗВЫШЕННЫХ ГЕРОЯ</p>
                     </div>
-                    <div class="deals__frame-item frame-name">
-                        <p>Название</p>
-                        <span class="deals__frame-name ">Супер тупое название</span>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Продавец</p>
+                        <p class="deals__result-item-result">Штирлиц А</p>
                     </div>
-                    <div class="deals__frame-item">
-                        <p>Сумма</p>
-                        <span class="deals__farme-price">2000.00P</span>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Покупатель</p>
+                        <p class="deals__result-item-result">Марло</p>
                     </div>
-                    <div class="deals__frame-item">
-                        <p>Статус</p>
-                        <span class="deals__frame-status green">Опалчено <img src="../img/deals-status.svg" alt="Опалчено"></span>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Сумма сделки</p>
+                        <p class="deals__result-item-result">2000Р</p>
+                    </div>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Комиссия сделки</p>
+                        <p class="deals__result-item-result">100Р</p>
+                    </div>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Итоговая сумма сделки</p>
+                        <p class="deals__result-item-result">2100Р</p>
+                    </div>
+                    <div class="deals__sum-line"></div>
+                    <div class="deals__result-item">
+                        <p class="deals__result-name">Описание сделки</p>
+                        <p class="deals__result-item-result">286M - силы <br>
+                            372 - уровень героев <br>
+                            34 - возвышенных героев<br>
+                            6 - героев иномирцев(Мерлин,Артур,Да Винчи,Баба Яга,Жанна д'Арк,Аинз(аренда) ) <br>
+                            
+                            Глава 37-2 <br>
+                            Уровень аккаунта 190 <br>
+                            67 Уровень Старейшего Древа <br>
+                            
+                            7 Героев 30/30 SI <br>
+                            8 Героев 9/9 Мебель и еще несколько на подходе <br>
+                            6 Героев 4/4 T4 <br>
+                            6 Героев 4/4 T3 <br>
+                            Все герои, у которых разблокирован SI, имеют легендарный SI +
+                            VIP 10 <br>
+                            Отдаю вам аккаунт Google.</p>
                     </div>
                 </div>
             </div>
-            <div class="deals__frame">
-                <a href="status-deals.html" class="deals__btn btn deals__btn-go">Перейти к сделке</a>
-                <div class="deals__frame-content">
-                    <div class="deals__frame-item">
-                        <p>Номер сделки</p>
-                        <span class="deals__frame-number">#4443434</span>
-                    </div>
-                    <div class="deals__frame-item frame-name">
-                        <p>Название</p>
-                        <span class="deals__frame-name ">Супер тупое название</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Сумма</p>
-                        <span class="deals__farme-price">2000.00P</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Статус</p>
-                        <span class="deals__frame-status green">Опалчено <img src="../img/deals-status.svg" alt="Опалчено"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="footer section deals-footer">
         <div class="footer__wrapper container">
