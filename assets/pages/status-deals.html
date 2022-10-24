@@ -17,13 +17,13 @@
             <nav class="header__nav deals-nav">
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a href="/assets/pages/for-whom.html" class="header__link" target="_blank">Мои сделки</a>
+                        <a href="/assets/pages/deals.html" class="header__link">Мои сделки</a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link deals-message-wrapper">Сообщения <span class="deals-message">1</span></a>
                     </li>
                     <li class="header__li">
-                        <a href="#" class="header__link deals-price-wrapper">Мой счет <span class="deals-price">20 000 00P</span></a>
+                        <a href="core.html" class="header__link deals-price-wrapper">Мой счет <span class="deals-price">20 000 00P</span></a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link deals-user green">
@@ -117,6 +117,60 @@
                             Отдаю вам аккаунт Google.</p>
                     </div>
                 </div>
+            </div>
+            <div class="deals__result-btns">
+                <button class="btn deals__result-freeze green">Заморозить сделку</button>
+                <button class="btn deals__result-confirm">Подтвердить</button>
+            </div>
+            <p class="deals__result-allow">Нажимая “Подтвердить”, вы автоматически завершаете сделку и деньги переводятся продавцу. Если товар не соответствует заявленным характеристикам, вы можете заморозить сделку и вызвать арбитраж для решения проблемы.</p>
+        </section>
+        <section class="chat container">
+            <div class="chat__wrapper">
+                <div class="chat__header">
+                    <div class="chat__header-text">
+                        <p class="chat__header-name">Чат с продавцом</p>
+                        <p class="chat__header-time">Продавец был <span class="seller-time-number"> 30</span> минут назад</p>
+                    </div>
+                    <button class="chat__header-btn">...</button>
+                </div>
+                <div class="deals__sum-line"></div>
+                <div class="chat__date">8/20/2020</div>
+                <div class="chat__box">
+                    <div class="message">
+                        <div class="message__text">Ебаный пиздец</div>
+                        <div class="message__down">
+                            <p class="message__name">Продавец</p>
+                            <p class="message__time">2:15 <span class="message__time-period">pm <img src="/assets/img/deals-status.svg" alt="Отправлено"></span></p>
+                        </div>
+                    </div>
+                    <div class="message message__system">
+                        <div class="message__text">Сделка оплачена. Теперь вы должны исполнить свои обязательства в рамках этой суммы. Для передачи информации и общения используйте данный чат. </div>
+                        <div class="message__down">
+                            <p class="message__name">Система</p>
+                            <p class="message__time">2:15 <span class="message__time-period">pm <img src="/assets/img/deals-status.svg" alt="Отправлено"></span></p>
+                        </div>
+                    </div>
+                    <div class="message message__admin">
+                        <div class="message__text">Опалтила сделку щас</div>
+                        <div class="message__down">
+                            <p class="message__name">Администрация</p>
+                            <p class="message__time">2:15 <span class="message__time-period">pm <img src="/assets/img/deals-status.svg" alt="Отправлено"></span></p>
+                        </div>
+                    </div>
+                    <div class="message message__user">
+                        <div class="message__text">Воркай давай скотина</div>
+                        <div class="message__down">
+                            <p class="message__name">by Ник</p>
+                            <p class="message__time">2:15 <span class="message__time-period">pm <img src="/assets/img/deals-status.svg" alt="Отправлено"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals__sum-line"></div>
+                <form class="message__send">
+                    <button class="message__smiles"><img src="/assets/img/message-smile.svg" alt="Смайлики"></button>
+                    <input type="text" class="message__send-input" placeholder="Start typing...">
+                    <button class="message__send"><img src="/assets/img/send-message.svg" alt="Отправить"></button>
+                </form>
             </div>
         </section>
     </main>

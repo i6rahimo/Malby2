@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Мои сделки</title>
+    <title>Мой счет</title>
 </head>
 <body>
     <header class="header container" id="header">
@@ -17,13 +17,13 @@
             <nav class="header__nav deals-nav">
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a href="/assets/pages/deals.html" class="header__link" >Мои сделки</a>
+                        <a href="/assets/pages/deals.html" class="header__link">Мои сделки</a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link deals-message-wrapper">Сообщения <span class="deals-message">1</span></a>
                     </li>
                     <li class="header__li">
-                        <a href="core.html" class="header__link deals-price-wrapper">Мой счет <span class="deals-price">20 000 00P</span></a>
+                        <a href="#" class="header__link deals-price-wrapper">Мой счет <span class="deals-price">20 000 00P</span></a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link deals-user green">
@@ -52,57 +52,25 @@
         </div>
     </header> 
     <div class="page">
-    <main class="main deals-main">
+    <main class="main">
         <section class="deals__banner-wrapper container">
-            <div class="deals__banner">
-                <p class="deal__banner-text">Мои сделки</p>
-                <a href="create-deals.html" class="btn deals__banner-btn">Создать сделку</a>
+            <div class="core__wrapper">
+            <div class="deals__banner deals__status-banner">
+                <p class="deal__banner-text deal__banner-text-status">Мой счет: <span>20500P</span></p>
+                <a href="create-deals.html" class="btn ">Пополнить счет</a>
             </div>
-        </section>
-        <div class="deals__frame-wrapper container">
-            <div class="deals__frame">
-                <a href="#" class="deals__btn btn">Подтвердить участие</a>
-                <div class="deals__frame-content">
-                    <div class="deals__frame-item">
-                        <p>Номер сделки</p>
-                        <span class="deals__frame-number">#4443434</span>
-                    </div>
-                    <div class="deals__frame-item frame-name">
-                        <p>Название</p>
-                        <span class="deals__frame-name ">Супер тупое название</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Сумма</p>
-                        <span class="deals__farme-price">2000.00P</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Статус</p>
-                        <span class="deals__frame-status green">Опалчено <img src="../img/deals-status.svg" alt="Опалчено"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="deals__frame">
-                <a href="status-deals.html" class="deals__btn btn deals__btn-go">Перейти к сделке</a>
-                <div class="deals__frame-content">
-                    <div class="deals__frame-item">
-                        <p>Номер сделки</p>
-                        <span class="deals__frame-number">#4443434</span>
-                    </div>
-                    <div class="deals__frame-item frame-name">
-                        <p>Название</p>
-                        <span class="deals__frame-name ">Супер тупое название</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Сумма</p>
-                        <span class="deals__farme-price">2000.00P</span>
-                    </div>
-                    <div class="deals__frame-item">
-                        <p>Статус</p>
-                        <span class="deals__frame-status green">Опалчено <img src="../img/deals-status.svg" alt="Опалчено"></span>
-                    </div>
-                </div>
+            <div class="deals__sum-line core-line"></div>
+            <div class="notification">
+                <div class="notification__item">melby.ru не является банком, платежной системой или иной финансовой организацией и не ведет расчетные счета пользователей.
+                    Кабинет melby.ru обеспечивает лишь удобство расчетов между Клиентами.</div>
+                    <div class="notification__item">Перевод осуществляется в течении 24ч.
+                        Кабинет melby.ru обеспечивает лишь удобство расчетов между Клиентами.</div>
+                        <div class="notification__item">nikname, на данный момент, переводы и выводы для вашей учетной записи приостановлены. Описание причины ограничений вы можете найти в системных сообщениях.</div>
             </div>
         </div>
+        </section>
+
+
     </main>
     <footer class="footer section deals-footer">
         <div class="footer__wrapper container">
