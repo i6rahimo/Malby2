@@ -1001,6 +1001,7 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
  }
 
 
@@ -1493,6 +1494,95 @@ button {
 .history__takes.active {
   display: block;
 }
+
+
+/* =========== SIGN IN ================ */
+
+
+.signin {
+  width: 390px;
+  background-color: var(--black-color);
+  border-radius: 16px;
+  padding: 24px 37px;
+}
+.signin__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signin__header p {
+  font-size: 23px;
+  font-weight: var(--font-bold);
+  line-height: 28px;
+}
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0 24px;
+}
+.form__password {
+  display: flex;
+  justify-content: space-between;
+  width: 323px;
+  max-width: 100%;
+  padding: 15px 16px;
+  background-color: var(--black-light);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: none;
+  word-wrap: break-word;
+  font-size: 12px;
+  font-weight: var(--font-regular);
+  line-height: 15px;
+}
+.form__password input {
+  background: none;
+  color: var(--white-color);
+}
+.eye-hide {
+  display: none;
+}
+.form__password.hide .eye-hide {
+  display: block;
+}
+.form__password.hide .eye-see {
+  display: none;
+
+}
+.input:focus {
+  outline: 1px solid var(--green-color);
+}
+.form__password:focus-within {
+  border: 1px solid var(--green-color);
+}
+.signin__form input {
+  color: var(--white-color);
+}
+.see-password {
+  cursor: pointer;
+  fill: var(--white-color);
+}
+.form-close {
+  cursor: pointer;
+  background: none;
+}
+.signin-btn {
+  margin: 0 0 24px;
+  width: 100%;
+}
+.signin__footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 15px;
+  gap: 8px;
+}
+.signin__footer-signup {
+  display: flex;
+  gap: 3px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
   .steps__arrow-active {

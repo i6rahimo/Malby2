@@ -115,3 +115,26 @@ const swiper = new Swiper('.swiper', {
 
   historyTabs()
 
+
+
+  const imgClose = document.querySelector('.form-close').addEventListener('click', closeForm)
+function closeForm() {
+        history.back()
+}
+
+
+function showPassword() {
+    const eye = document.querySelector('.see-password'),
+          input = document.querySelector('#user_password'),
+          formPassword = document.querySelector('.form__password'); 
+    eye.addEventListener('click', ()=> {
+        if(input.type === 'password') {
+            input.type = 'text'
+        } else {
+            input.type = 'password'
+        }
+        formPassword.classList.toggle('hide')
+    })
+}
+
+showPassword()
