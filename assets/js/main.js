@@ -1,19 +1,18 @@
-const btn = document.querySelectorAll('.can__item');
-btn.forEach(e => {
-    console.log(e);
-    e.addEventListener('click', el => {
-        const self = el.currentTarget;
-        console.log(self);
-        self.classList.toggle('active')
 
-        if(e.contains('active')) {
-            console.log('Yes');
-        }else {
-            console.log('No');
-        }
-    })
+function tabBtn() {
+
+    const btn = document.querySelectorAll('.can__item');
+    btn.forEach(e => {
+        e.addEventListener('click', ()=> {
+            btn.forEach((e) => {
+                e.classList.remove('active')
+            })
+            e.classList.add('active')
+        })
 })
+}
 
+tabBtn();
 
 
 function headerNavShow() {
@@ -92,3 +91,27 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
   });
+
+
+
+
+
+  function historyTabs() {
+    const historyTabsBtn = document.querySelectorAll('.history__item');
+    const tabsItem = document.querySelectorAll('.history__takes')
+    historyTabsBtn.forEach(e => {
+        e.addEventListener('click', ()=> {
+            let tabId = e.getAttribute('data-tab');
+            const curretntTab = document.querySelector(tabId)
+            
+            
+            tabsItem.forEach((e)=> {
+                e.classList.remove('active')                
+            })
+            curretntTab.classList.add('active')
+        })
+    })
+  }
+
+  historyTabs()
+

@@ -73,91 +73,80 @@
         <section class="history container">
             <p class="history__title">История</p>
             <div class="can__items history__items">
-                <div class="can__item history__item" data-tab="#history">История пополнений</div>
-                <div class="can__item history__item active" data-tab="#takes">Выводы по реквизитам</div>
-                <div class="can__item history__item" data-tab="#transfer">Перевод пользователю</div>
+                <div class="can__item history__item stop-active">История пополнений</div>
+                <div class="can__item history__item stop-active">Выводы по реквизитам</div>
+                <div class="can__item history__item active">Перевод пользователю</div>
             </div>
-            <div class="history__takes history__history" id="history"></div>
-            <div class="history__takes active" id="takes">
-                <div class="history__take history__take-first">
-                    <div class="history__take-id">
+            <!-- <div class="hostory__takes">
+                <div class="hostory__take hostory__take-first">
+                    <div class="hostory__take-id">
                         <p>ID</p>
                         <span>110</span>
                     </div>
-                    <div class="history__take-date">
+                    <div class="hostory__take-date">
                         <p>Дата</p>
                         <span>2022-09-18 19:50</span>
                     </div>
-                    <div class="history__take-type">
+                    <div class="hostory__take-type">
                         <p>Тип реквизита</p>
                         <span>Сбербанк</span>
                     </div>
-                    <div class="history__take-number">
+                    <div class="hostory__take-number">
                         <p>Номер счета</p>
                         <span>2019232193</span>
                     </div>
-                    <div class="history__take-sum">
+                    <div class="hostory__take-sum">
                         <p>Сумма</p>
                         <span>50000Р</span>
                     </div>
-                    <div class="history__take-status">
+                    <div class="hostory__take-status">
                         <p>Статус</p>
                         <span class="green">Оплачено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
                     </div>
                 </div>
                 <div class="deals__sum-line history-line"></div>
-                <div class="history__take history__take-second">
-                    <div class="history__take-id">
+                <div class="hostory__take hostory__take-second">
+                    <div class="hostory__take-id">
                         <p>ID</p>
                         <span>110</span>
                     </div>
-                    <div class="history__take-date">
+                    <div class="hostory__take-date">
                         <p>Дата</p>
                         <span>2022-09-18 19:50</span>
                     </div>
-                    <div class="history__take-type">
+                    <div class="hostory__take-type">
                         <p>Тип реквизита</p>
                         <span>Сбербанк</span>
                     </div>
-                    <div class="history__take-number">
+                    <div class="hostory__take-number">
                         <p>Номер счета</p>
                         <span>2019232193</span>
                     </div>
-                    <div class="history__take-sum">
+                    <div class="hostory__take-sum">
                         <p>Сумма</p>
                         <span>50000Р</span>
                     </div>
-                    <div class="history__take-status">
+                    <div class="hostory__take-status">
                         <p>Статус</p>
                         <span class="green">Оплачено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
                     </div>
                 </div>
-            </div> 
-            <div class="history__takes history__transfers" id="transfer">
-                <a href="transfer.html" class="btn history__transfer-btn">Создать перевод</a>
-                <div class="history__take history__transfer  history__take-first">
-                    <div class="history__transfer-id">
-                        <p>ID</p>
-                        <span>110</span>
-                    </div>
-                    <div class="history__transfer-date">
-                        <p>Дата</p>
-                        <span>2022-09-18 19:50</span>
-                    </div>
-                    <div class="history__transfer-receiver">
-                        <p>Получатель</p>
-                        <span>Melo</span>
-                    </div>
-                    <div class="history__transfer-sum">
-                        <p>Сумма</p>
-                        <span>50Р</span>
-                    </div>
-                    <div class="history__transfer-status">
-                        <p>Статус</p>
-                        <span class="green">Одобрено <img src="/assets/img/deals-status.svg" alt="Одобрено"></span>
-                    </div>
-                </div>
-                <div class="deals__sum-line history-line"></div>
+            </div> -->
+            <div class="hostory__takes history__transfers">
+                <form class="history__transfer-form">
+                    <label>
+                        Логин пользователя
+                        <input type="text" class="history__transfer-user_login input" placeholder="login">
+                    </label>
+                    <label>
+                        Cумма
+                        <div class="history__transfer-sumwrapper">
+                            <input type="text" class="history__transfer-input_sum input" placeholder="Например, 450">
+                            <div class="ruble">&#8381;</div>
+                        </div>
+                    </label>
+                    <button class="btn history__transfer-send">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
