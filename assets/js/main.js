@@ -117,24 +117,55 @@ const swiper = new Swiper('.swiper', {
 
 
 
-  const imgClose = document.querySelector('.form-close').addEventListener('click', closeForm)
-function closeForm() {
+  const imgClose = document.querySelectorAll('.form-close')
+  imgClose.forEach(e => {
+      e.addEventListener('click', ()=> {
         history.back()
-}
+      })
+  })
 
+   
 
 function showPassword() {
-    const eye = document.querySelector('.see-password'),
-          input = document.querySelector('#user_password'),
-          formPassword = document.querySelector('.form__password'); 
-    eye.addEventListener('click', ()=> {
-        if(input.type === 'password') {
-            input.type = 'text'
-        } else {
-            input.type = 'password'
-        }
-        formPassword.classList.toggle('hide')
-    })
+    const eye = document.querySelectorAll('.see-password'),
+          input = document.querySelectorAll('#user_password');
+        //   formPassword = document.querySelectorAll('#form__password');
+          eye.forEach((e)=> {
+            const eyes = e.currentTarget;
+              e.addEventListener('click', (element)=> {
+                  input.forEach((item)=> {
+                      if(item.type === 'password') {
+                          item.type = 'text'
+                        } else {
+                            item.type = 'password'
+                        }
+                    })
+                    const formPassword = document.querySelectorAll('.form__password');
+                    formPassword.forEach(e => {
+
+                        e.classList.toggle('hide')
+                    })
+                    const formPasswordConfirm = document.querySelector('.form__password');
+                    formPassword.forEach(e => {
+                        e.classList.toggle('hide')
+                    })
+            })
+        })   
+}
+showPassword() 
+
+
+function passwordEquality() {
+
 }
 
-showPassword()
+function checkPassword() {
+    const password = document.querySelector('#user_password');
+    // password.value;
+    console.log(password.innerHTML);
+    password.addEventListener('input', e => {
+        console.log()
+    })
+    // console.log(innerInput);
+}
+checkPassword()

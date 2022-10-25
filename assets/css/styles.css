@@ -1521,7 +1521,7 @@ button {
   gap: 16px;
   margin: 24px 0 24px;
 }
-.form__password {
+.form__password-confirm, .form__password {
   display: flex;
   justify-content: space-between;
   width: 323px;
@@ -1536,14 +1536,14 @@ button {
   font-weight: var(--font-regular);
   line-height: 15px;
 }
-.form__password input {
+.form__password-confirm,.form__password input {
   background: none;
   color: var(--white-color);
 }
 .eye-hide {
   display: none;
 }
-.form__password.hide .eye-hide {
+.form__password-confirm, .form__password.hide .eye-hide {
   display: block;
 }
 .form__password.hide .eye-see {
@@ -1554,10 +1554,21 @@ button {
   outline: 1px solid var(--green-color);
 }
 .form__password:focus-within {
-  border: 1px solid var(--green-color);
+  outline: 1px solid var(--green-color);
+}
+.form__password-confirm:focus-within {
+  outline: 1px solid var(--green-color);
+}
+.form__password-confirm {
+  display: flex;
+  background-color: var(--black-light);
+}
+.form__password-confirm input {
+  background: none;
 }
 .signin__form input {
   color: var(--white-color);
+  width: 100%;
 }
 .see-password {
   cursor: pointer;
@@ -1581,6 +1592,20 @@ button {
 .signin__footer-signup {
   display: flex;
   gap: 3px;
+}
+.form-error {
+  border-radius: 8px;
+  /* outline: 1px solid #D96262; */
+}
+.form-error-text{
+  color: #D96262;
+  margin: -10px 0 0;
+  font-size: 12px;
+  line-height: 15px;
+  display: none;  
+}
+.form-error.error {
+  outline: 1px solid #D96262;
 }
 
 /*=============== BREAKPOINTS ===============*/
