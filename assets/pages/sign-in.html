@@ -53,11 +53,11 @@
                 </button>
                 </div>
                 <div class="form__input-wrapper">                
-                <label class="form-error">
-                    <input class="input" type="text" name="user_login" id="user_login" placeholder="Логин">
+                <label class=" user_login">
+                    <input class="input input_user" type="text" name="user_login" id="user_login" placeholder="Логин">
                 </label>
-                <span class="form-erro form-error-text error">Неправильный логин</span>
-                <div class="form__password input form-error">
+                <!-- <span class="form-error form-error-text error">Неправильный логин</span> -->
+                <div class="form__password input form-error  ">
                     <input class="" type="password" class="user_password" name="user_password" id="user_password" placeholder="Пароль">
                     <picture class="see-password">
                         <svg class="eye-see" width="20" height="13" viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,6 @@
                                 
                     </picture>
                 </div>
-                <span class="form-erro form-error-text error">Неправильный пароль</span>
             </div>
                 <button class="btn signin-btn">Войти</button>
                 <div class="signin__footer">
@@ -118,6 +117,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <!--=============== MAIN JS ===============-->
+        <script src="../libs/just-validate.js"></script>
         <script src="../js/main.js"></script>
 </div>
 </body>

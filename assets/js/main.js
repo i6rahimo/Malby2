@@ -161,11 +161,110 @@ function passwordEquality() {
 
 function checkPassword() {
     const password = document.querySelector('#user_password');
+    const formPassword = document.querySelector('.form__password');
+    const forError = document.querySelector('.form-error')
     // password.value;
-    console.log(password.innerHTML);
+    console.log(password);
     password.addEventListener('input', e => {
-        console.log()
+        console.log(password.value)
+        if(!password.value === '123123' ) {
+            formPassword.classList.add('error')
+        }else {
+            formPassword.classList.remove('error')
+        }
+        console.log(forError);
     })
     // console.log(innerInput);
 }
 checkPassword()
+
+
+console.log('Init!');
+
+// inputmask
+// const form = document.querySelector('.form');
+// const telSelector = form.querySelector('input[type="tel"]');
+// const inputMask = new Inputmask('+7 (999) 999-99-99');
+// inputMask.mask(telSelector);
+
+const validation = new JustValidate('.signin__form');
+
+validation
+  .addField('#user_login', [
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Введите логин!',
+    },
+    {
+        rule: 'function',
+        validator: function() {
+            const forErr = document.querySelector('.input_user')
+            forErr.classList.add('error')
+       },
+    }
+  ])
+  .addField('.form__password', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Неправильный пароль',
+    },
+    {
+      rule: 'password',
+      value: true,
+      errorMessage: 'Введите корректный пароль',
+    },
+    {
+        rule: 'function',
+        validator: function() {
+            const forErr = document.querySelector('.form-error')
+            forErr.classList.add('error')
+       },
+    }
+  ])
+//   .addField('.input-tel', [
+//     {
+//       rule: 'required',
+//       value: true,
+//       errorMessage: 'Телефон обязателен',
+//     },
+//     {
+//       rule: 'function',
+//       validator: function() {
+//         const phone = telSelector.inputmask.unmaskedvalue();
+//         return phone.length === 10;
+//       },
+//       errorMessage: 'Введите корректный телефон',
+//     },
+//   ])
+  .onSuccess((event) => {
+    // console.log('Validation passes and form submitted', event);
+
+    // let formData = new FormData(event.target);
+
+    // console.log(...formData);
+
+    // let xhr = new XMLHttpRequest();
+
+    // xhr.onreadystatechange = function () {
+    //   if (xhr.readyState === 4) {
+    //     if (xhr.status === 200) {
+    //       console.log('Отправлено');
+    //     }
+    //   }
+    // }
+
+    // xhr.open('POST', 'mail.php', true);
+    // xhr.send(formData);
+
+    // event.target.reset();
+  });
