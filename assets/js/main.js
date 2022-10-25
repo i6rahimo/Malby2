@@ -203,14 +203,11 @@ validation
       rule: 'required',
       value: true,
       errorMessage: 'Введите логин!',
+      validator: function() {
+          const forErr = document.querySelector('.input_user')
+          forErr.classList.add('error')
+     },
     },
-    {
-        rule: 'function',
-        validator: function() {
-            const forErr = document.querySelector('.input_user')
-            forErr.classList.add('error')
-       },
-    }
   ])
   .addField('.form__password', [
     {
@@ -225,7 +222,8 @@ validation
     },
     {
         rule: 'function',
-        validator: function() {
+        value: true,
+        validator: () => {
             const forErr = document.querySelector('.form-error')
             forErr.classList.add('error')
        },
@@ -247,6 +245,15 @@ validation
 //     },
 //   ])
   .onSuccess((event) => {
+    const inputPassword = document.querySelector('#user-password').innerHTML;
+    console.log(inputPassword);
+    if(inputPassword === Number) {
+      window.location.href = "/deals.html";
+    }else {
+      return false
+    }
+
+    // window.location.href = "deals.html";
     // console.log('Validation passes and form submitted', event);
 
     // let formData = new FormData(event.target);

@@ -1520,6 +1520,12 @@ button {
   flex-direction: column;
   margin: 24px 0 24px;
 }
+.form__input-wrapper label {
+  margin: 0 0 16px;
+}
+.form__password-confirm {
+  margin: 16px 0 0;
+}
 .user_login {
   margin: 0 0 16px;
 }
@@ -1617,6 +1623,7 @@ button {
 .input_user.error {
   outline: 1px solid #D96262;
 }
+
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
   .steps__arrow-active {
