@@ -16,7 +16,7 @@
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a href="/assets/pages/for-whom.html" class="header__link" target="_blank">Для кого</a>
+                        <a href="for-whom.html" class="header__link" target="_blank">Для кого</a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link">Помощь</a>
@@ -46,7 +46,7 @@
     </header>
     <main class="main">
         <section class="signin container">
-            <form class="signin__form">
+            <form class="signup__form" id="signup__form">
                 <div class="signin__header">
                     <p>Регистрация</p>
                 <button class="form-close">
@@ -112,12 +112,17 @@
                 </div>
                 <span class="form-erro form-error-text">Пароли не совпадают</span>
             </div>
-                <button class="btn signin-btn">Войти</button>
+                <button class="btn signin-btn">Зарегистрироваться</button>
                 <div class="signin__footer">
-                    <a href="#" class="signin__footer-forget green">Забыли пароль?</a>
+                    <div class="siginup-politic">
+                        <input class="signup-checkbox" type="checkbox" name="checkbox" id="signup-checkbox">
+                        <p>Я ознакомлен с
+                            <a href="#" class="signin__footer-politic green">"Пользовательским соглашением"</a>
+                        </p>
+                    </div>
                     <div class="signin__footer-signup">
-                        <a href="#" class="signin__footer-signup">Нету учетной записи?</a>
-                        <a href="" class="green"> Зарегистрироваться</a>
+                        <a href="#" class="signin__footer-signup">Уже есть аккаунт?</a>
+                        <a href="sign-in.html" class="green">Войти</a>
                     </div>
                 </div>
             </form>
@@ -147,6 +152,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
          <!--=============== MAIN JS ===============-->
     <script src="../libs/just-validate.js"></script>
+    <script src="../js/validatesignup.js"></script>
 
     <script src="../js/main.js"></script> 
 </div>

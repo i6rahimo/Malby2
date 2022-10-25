@@ -726,7 +726,7 @@ button {
   font-weight: var(--font-bold);
 }
 .steps__items {
-  margin: 110px 0 0;
+  margin: 110px auto 0;
   display: grid;
   gap: 30px;  
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -742,7 +742,14 @@ button {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 30px;
+}
+.steps__item:nth-child(3) {
+  justify-content: center;
+}
+.steps__item:nth-child(6) {
+  justify-content: center;
 }
 .steps__item p:nth-child(1) {
   margin: 24px 0 8px;
@@ -1314,9 +1321,9 @@ button {
 .message {
   word-wrap: break-word;
   background-color: #323232;
-  width: fit-content;
-  width: 384px;
-  max-width: 100%;  
+  /* width: fit-content; */
+  max-width: 384px;
+  /* max-width: 100%;   */
   padding: 12px;
   border-radius: 12px 12px 12px 0;
 }
@@ -1450,11 +1457,15 @@ button {
   font-size: var(--big-font-size);
   font-weight: var(--font-bold);
 }
-
+.history__transfers  {
+  /* margin: 0 auto 130px; */
+}
 .history__transfer-btn {
   margin: 0 0 24px ;
 }
-
+.history {
+  margin: 0 auto 130px;
+}
 .history__transfer-form {
   display: flex;
   flex-direction: column;
@@ -1525,6 +1536,9 @@ button {
 }
 .form__password-confirm {
   margin: 16px 0 0;
+}
+.form__password-confirm input {
+  color: var(--white-color);
 }
 .user_login {
   margin: 0 0 16px;
@@ -1622,6 +1636,41 @@ button {
 }
 .input_user.error {
   outline: 1px solid #D96262;
+}
+
+.setting__title {
+  margin: 70px auto 191px;
+}
+.setting__title p {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 668px;
+  max-width: 100%;
+}
+.settings-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: var(--normal-font-size);
+  height: 50px;
+}
+.settings-btn {
+  width: 323px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.siginup-politic {
+  display: flex;
+  align-items: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -1789,8 +1838,27 @@ button {
   }
 }
 
-
-
+.siginup-politic {
+  display: flex;
+  gap: 11px;
+}
+.signin__footer-politic {
+  text-decoration: underline;
+}
+#signup-checkbox {
+  background: none !important;
+  width: 18px;
+  height: 18px;
+  border: none;
+  color: var(--white-color);
+  accent-color: var(--green-color);
+}
+#signup-checkbox:checked {
+  border: none;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green-color);
+}
 
 
 

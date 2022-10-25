@@ -15,7 +15,7 @@
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a href="/assets/pages/for-whom.html" class="header__link" target="_blank">Для кого</a>
+                        <a href="for-whom.html" class="header__link">Для кого</a>
                     </li>
                     <li class="header__li">
                         <a href="#" class="header__link">Помощь</a>
@@ -29,10 +29,10 @@
                 </ul>
                 <ul class="header__ul header__ul-register">
                     <li class="header__li">
-                        <a href="#" class="header__link header__link-signin">Войти</a>
+                        <a href="deals.html" class="header__link header__link-signin">Войти</a>
                     </li>
                     <li class="header__li">
-                        <a href="#" class="header__link green header__link-signup">Создать аккаунт</a>
+                        <a href="sign-up.html" class="header__link green header__link-signup">Создать аккаунт</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
     </header>
     <main class="main">
         <section class="signin container">
-            <form class="signin__form">
+            <form class="signin__form" id="signin__form">
                 <div class="signin__header">
                     <p>Войти</p>
                 <button class="form-close">
@@ -57,7 +57,7 @@
                     <input class="input input_user" type="text" name="user_login" id="user_login" placeholder="Логин">
                 </label>
                 <!-- <span class="form-error form-error-text error">Неправильный логин</span> -->
-                <div class="form__password input form-error  ">
+                <div class="form__password input form-error ">
                     <input class="" type="password" class="user_password" name="user_password" id="user_password" placeholder="Пароль">
                     <picture class="see-password">
                         <svg class="eye-see" width="20" height="13" viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@
                     </picture>
                 </div>
             </div>
-                <button class="btn signin-btn">Войти</button>
+                <a href="deals.html" class="btn signin-btn">Войти</a>
                 <div class="signin__footer">
                     <a href="#" class="signin__footer-forget green">Забыли пароль?</a>
                     <div class="signin__footer-signup">
@@ -118,6 +118,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <!--=============== MAIN JS ===============-->
         <script src="../libs/just-validate.js"></script>
+        <script src="../js/validate.js"></script>
         <script src="../js/main.js"></script>
 </div>
 </body>
