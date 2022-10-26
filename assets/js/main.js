@@ -48,11 +48,11 @@ const swiper = new Swiper('.swiper', {
     // spaceBetween: 30,
     centeredSlides:true,
     // If we need pagination
-    pagination: {
-      clickable: true,
-      el: '.swiper-pagination',
-      type: 'progressbar',
-    },
+    // pagination: {
+    //   clickable: true,
+    //   el: '.swiper-pagination',
+    //   type: 'progressbar',
+    // },
     breakpoints: {
         // when window width is >= 320px
         320: {
