@@ -600,15 +600,15 @@ button {
   width: 100%;
 }
 .swiper-pagination .swiper-pagination-progressbar-fill::after{
-  content: '';
-  display: inline-table;
+  content: url(../img/dot.svg);
   position: absolute;
   right:  0;
   bottom: -8px;
-   width: 20px; 
+  flex-shrink: 1;
+  width: 20px; 
   height: 20px;
-  border-radius: 100%;
-  transform: scaleX(1) !important;
+  border-radius: 50px;
+  /* transform: scaleX(1) !important; */
   background: var(--green-color); 
 }
 /*=============== WHY ===============*/
@@ -1579,6 +1579,7 @@ button {
   background: none;
   color: var(--white-color);
 }
+
 .eye-hide {
   display: none;
 }
@@ -1592,7 +1593,10 @@ button {
 .input:focus {
   outline: 1px solid var(--green-color);
 }
-.form__password:focus-within {
+.form__password {
+  flex-direction: column;
+}
+.form__password.error:focus-within {
   outline: 1px solid var(--green-color);
 }
 .form__password-confirm:focus-within {
@@ -1634,14 +1638,20 @@ button {
 }
 .form-error {
   border-radius: 8px;
-  /* outline: 1px solid #D96262; */
+  outline: 1px solid #D96262;
 }
 .form-error-text{
   color: #D96262;
-  margin: -10px 0 0;
+  margin: 10px 0 0;
   font-size: 12px;
   line-height: 15px;
   display: none;  
+}
+.form-error-text:nth-child(2) {
+  margin: -5px 0 10px;
+}
+.form-error.error ~ .form-error-text {
+  display: block;
 }
 .form-error.error {
   outline: 1px solid #D96262;
@@ -1707,7 +1717,7 @@ button {
 }
 @media (max-width: 961px){
   .header__nav {
-    width: 90%;
+    width: 80%;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1723,8 +1733,11 @@ button {
     transform: translateX(100%);
     transition: transform .4s ease;
   }
+  .header {
+    overflow-x: hidden;
+  }
   .header__ul:nth-child(1) {
-    transform: translate(-1%, 70%);
+    transform: translate(0, 70%);
   }
   .header__ul {
     position: relative;
@@ -1737,9 +1750,8 @@ button {
     z-index: 2;
   }
   .header__nav.active {
-    transform: translateX(0);
+    transform: translateX(0%);
     transition: transform .4s ease;
-
   }
   .header__burger.active span:nth-child(2) {
     margin-left: 100px;
