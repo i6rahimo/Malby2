@@ -1037,6 +1037,7 @@ background: var(--green-color);
 
 .deals-main {
   flex: 1 1 auto;
+  margin: 0  0 40px;
 } 
  .deals-nav {
   width: auto;
@@ -1715,7 +1716,7 @@ background: var(--green-color);
 }
 
 .setting__title {
-  margin: 70px auto 191px;
+  margin: 70px auto 120px;
 }
 .setting__title p {
   font-size: var(--h1-font-size);
@@ -1725,9 +1726,19 @@ background: var(--green-color);
 .settings-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 30px;
   width: 668px;
   max-width: 100%;
+  margin: 0 auto 40px;
+}
+.settings-form input {
+  /* margin: 10px 0 0; */
+}
+.settings-name, .settings-mail {
+  margin: 10px 0 0;
+}
+.settings__password {
+  margin: 10px 0 0;
 }
 .settings-form label {
   display: flex;
@@ -1784,15 +1795,14 @@ letter-spacing: 0.012em;
   width: 50%;
 }
 .deals-progress-fill_paid {
-  width: 100%;
-  background-color: #FC0101;
+  width: 70%;
 }
 .deals__result-confirm {
   width: fit-content;
   padding: 16px 24px;
 }
 .deals-progress-paid {
-  width: 250px;
+  width: 350px;
 }
 /* ========= PUT ================ */
 
@@ -1841,8 +1851,11 @@ letter-spacing: 0.012em;
   }
 }
 @media (max-width: 961px){
+  .setting__title {
+    margin: 70px auto 20px;
+  }
   .header__nav {
-    width: 80%;
+    width: 60%;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
