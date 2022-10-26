@@ -145,12 +145,13 @@ function showPassword() {
                             item.type = 'password'
                         }
                     })
-                    const formPassword = document.querySelector('.form__password');
-                    formPassword.classList.toggle('hide')
+                    console.log(eyes);
+                    const formPassword = document.querySelectorAll('.form__password');
+                    // formPassword.classList.toggle('hide')
                     // const formPasswordConfirm = document.querySelector('.form__password');
-                    // formPassword.forEach(e => {
-                    //     e.classList.toggle('hide')
-                    // })
+                    formPassword.forEach(e => {
+                        e.classList.toggle('hide')
+                    })
             })
         })   
 }
@@ -180,12 +181,21 @@ function passwordEquality() {
 // }
 // checkPassword()
 
-function sighupPassword() {
-  const eye = document.querySelector(".form__password-confirm")
-  eye.addEventListener('click', ()=> {
-    eye.classList.toggle('hide')
-  })
-}
+// function sighupPassword() {
+//   const eye = document.querySelector(".see-password-confirm");
+//   const formPassword = document.querySelector('.form__password-confirm');
+//   const input = document.querySelector('#user_password')
+//   eye.addEventListener('click', ()=> {
+
+//       if(item.type === 'password') {
+//           item.type = 'text'
+//         } else {
+//             item.type = 'password'
+//         }
+//     formPassword.classList.toggle('hide')
+//     console.log(formPassword);
+//   })
+// }
 // sighupPassword()
 // function validate() {
 //   const form = document.querySelector('#signin__form')

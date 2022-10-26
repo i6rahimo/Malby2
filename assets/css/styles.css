@@ -540,6 +540,7 @@ letter-spacing: 0.012em;
   margin: 0 auto;
   align-items: center;
   justify-content: center ;
+  z-index: -1;
 }
 .swiper-scrollbar  {
   display: flex;
@@ -1622,8 +1623,8 @@ background: var(--green-color);
 .form__password-confirm, .form__password {
   display: flex;
   justify-content: space-between;
-  width: 323px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 323px;
   padding: 15px 16px;
   background-color: var(--black-light);
   color: rgba(255, 255, 255, 0.7);
@@ -1634,6 +1635,7 @@ background: var(--green-color);
   font-weight: var(--font-regular);
   line-height: 15px;
 }
+
 .form__password-confirm,.form__password input {
   background: none;
   color: var(--white-color);
@@ -1811,6 +1813,9 @@ letter-spacing: 0.012em;
 .deals-progress-paid {
   width: 350px;
 }
+.deals-ul {
+  margin: 0 35px 0 0;
+}
 /* ========= PUT ================ */
 
 .put {
@@ -1842,6 +1847,9 @@ letter-spacing: 0.012em;
 .put__teps {
   margin: 24px 0 0;
 }
+.login-password {
+  max-width: 100%;
+}
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
   .steps__arrow-active {
@@ -1858,6 +1866,9 @@ letter-spacing: 0.012em;
   }
 }
 @media (max-width: 961px){
+  .deals-ul {
+    margin: 0;
+  }
   .setting__title {
     margin: 70px auto 20px;
   }
