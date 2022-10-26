@@ -1772,6 +1772,7 @@ letter-spacing: 0.012em;
 }
 .deals-progress-fill_paid {
   width: 100%;
+  background-color: #FC0101;
 }
 
 /* ========= PUT ================ */
