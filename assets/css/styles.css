@@ -1141,7 +1141,7 @@ button {
 .deals__btn {
 }
 .deals__frame-content {
-  width: 730px;
+  width: 740px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -1190,6 +1190,18 @@ button {
   background-color: var(--black-color);
   border-radius: 28px;
   position: relative;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-color: var(--black-light);
+  background-image: url("../img/send-deals.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 20px;
+
 }
 
 .deals-progress-fill {
@@ -1537,6 +1549,11 @@ button {
 .form__password-confirm {
   margin: 16px 0 0;
 }
+.input__password-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .form__password-confirm input {
   color: var(--white-color);
 }
@@ -1861,5 +1878,7 @@ button {
 }
 
 
-
+.rubl {
+  font-weight: var(--font-regular) !important;
+}
 

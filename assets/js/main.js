@@ -179,11 +179,19 @@ function passwordEquality() {
 // checkPassword()
 
 
-console.log('Init!');
+function validate() {
+  const form = document.querySelector('#signin__form')
+  // console.log(password);
+  form.addEventListener('submit', ()=> {
+    const password = document.querySelector('.input__password-wrapper input').value
+    console.log(password);
+    if(!password === "") {
+      console.log('qwe');
+    }else {
+      const forerror = document.querySelector('.form__password')
+      // console.log('pppppppppp');
+    }
+  })
+}
 
-// inputmask
-// const form = document.querySelector('.form');
-// const telSelector = form.querySelector('input[type="tel"]');
-// const inputMask = new Inputmask('+7 (999) 999-99-99');
-// inputMask.mask(telSelector);
-
+validate()
