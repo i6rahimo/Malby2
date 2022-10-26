@@ -122,7 +122,10 @@ const swiper = new Swiper('.swiper', {
   const imgClose = document.querySelectorAll('.form-close')
   imgClose.forEach(e => {
       e.addEventListener('click', ()=> {
-        history.back()
+        // const oldUrl = document.referrer;
+        // window.history.back()
+        history.go(-1);
+return false;
       })
   })
 
