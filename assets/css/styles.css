@@ -614,11 +614,33 @@ button {
   width: 20px; 
   height: 20px;
   border-radius: 50px;
-  /* transform: scaleX(1) !important; */
+  transform: scale();
   background: var(--green-color); 
 }
 /*=============== WHY ===============*/
+.swiper-scrollbar-drag.swiper-scrollbar-drag {
+  background-color: var(--green-color);
+  max-width: 73px;
+  position: relative;
+  /* transform: translate3d(231.654px, 0px, 0px); */
+}
+.swiper-scrollbar-drag.swiper-scrollbar-drag:after {
 
+  content: url(../img/dot.svg);
+  position: absolute;
+  right:  0;
+  bottom: -8px;
+  flex-shrink: 1;
+width: 20px; 
+height: 20px;
+border-radius: 50px;
+transform: scale();
+background: var(--green-color); 
+}
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  max-width: 375px;
+  justify-content: center;
+}
 .why__title {
   text-align: center;
   margin: 0 0 40px;
@@ -1226,6 +1248,9 @@ button {
   max-width: 100%;
   font-size: var(--big-font-size);
 }
+/* .deals-btn-arbitraj-paid {
+  border: 1px solid ;
+} */
 .deal__banner-text-status {
   display: flex;
   align-items: center;
@@ -1599,7 +1624,9 @@ button {
 
 .form__password.hide .eye-see {
   display: none;
-
+}
+.form__password.hide .eye-hide {
+  display: block;
 }
 .input:focus {
   outline: 1px solid var(--green-color);
@@ -1745,6 +1772,38 @@ letter-spacing: 0.012em;
 }
 .deals-progress-fill_paid {
   width: 100%;
+}
+
+/* ========= PUT ================ */
+
+.put {
+  margin:  40px auto 40px;
+  /* background-color: var(--black-light); */
+  border-radius: 8px;
+  /* max-width: 100%; */
+}
+.put__title.put__title{
+  line-height: 41px;
+  font-size: 33px;
+  /* font-size: var(--h1-font-size); */
+  font-weight: var(--font-bold);
+  margin: 0 0 24px;
+}
+.put p {
+  font-size: var(--normal-font-size);
+  line-height: 24px;
+}
+.put_wallet {
+  font-size: 12px;
+  word-wrap: break-word;
+}
+.put__wrapper {
+  border-radius: 8px;
+  padding: 30px 24px;
+  background-color: var(--black-light);
+}
+.put__teps {
+  margin: 24px 0 0;
 }
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {

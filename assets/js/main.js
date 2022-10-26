@@ -49,9 +49,9 @@ const swiper = new Swiper('.swiper', {
     centeredSlides:true,
     // If we need pagination
     pagination: {
+      clickable: true,
       el: '.swiper-pagination',
       type: 'progressbar',
-      progressbarFillClass: 'swiper-pagination-progressbar-fill',
     },
     breakpoints: {
         // when window width is >= 320px
@@ -78,7 +78,7 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 4,
           spaceBetween: 30
         } 
-    }
+    },
   
     // Navigation arrows
     // navigation: {
@@ -87,12 +87,14 @@ const swiper = new Swiper('.swiper', {
     // },
   
     // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+    scrollbar: {
+      draggable: true,  
+      el: '.swiper-scrollbar',
+    },
   });
 
 
+// тебе нужно небольшой скрипт написать, который ищет номер слайда и подставляет его стили кружочка типа scaleX( calc(1 * [номер слайда]) )
 
 
 
@@ -176,12 +178,12 @@ function passwordEquality() {
 // checkPassword()
 
 function sighupPassword() {
-  const eye = document.querySelector("#form__password-confirm")
+  const eye = document.querySelector(".form__password-confirm")
   eye.addEventListener('click', ()=> {
     eye.classList.toggle('hide')
   })
 }
-sighupPassword()
+// sighupPassword()
 // function validate() {
 //   const form = document.querySelector('#signin__form')
 //   // console.log(password);
