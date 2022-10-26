@@ -1616,6 +1616,9 @@ background: var(--green-color);
 .user_login {
   margin: 0 0 16px;
 }
+.form__password {
+  width: 100%;
+}
 .form__password-confirm, .form__password {
   display: flex;
   justify-content: space-between;
