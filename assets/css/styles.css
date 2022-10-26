@@ -1571,8 +1571,12 @@ background: var(--green-color);
   width: 390px;
   background-color: var(--black-color);
   border-radius: 16px;
-  padding: 24px 37px;
   margin: 170px auto 40px;
+  max-width: 100%;
+}
+.signup__form {
+  max-width: 100%;
+  padding: 24px 37px;
 }
 .signin__header {
   display: flex;
