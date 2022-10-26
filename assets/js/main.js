@@ -175,7 +175,13 @@ function passwordEquality() {
 // }
 // checkPassword()
 
-
+function sighupPassword() {
+  const eye = document.querySelector("#form__password-confirm")
+  eye.addEventListener('click', ()=> {
+    eye.classList.toggle('hide')
+  })
+}
+sighupPassword()
 // function validate() {
 //   const form = document.querySelector('#signin__form')
 //   // console.log(password);

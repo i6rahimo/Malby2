@@ -1,7 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
-
+@font-face {
+  font-family: mulishbold;
+  src: url('../fonts/font-bold.woff2');
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -13,7 +16,6 @@
   --black-light: #27262b;
   --black-color: #1e1e1e;
   --violet-color: #b153e0;
-
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --biggest-font-size: 23px;
@@ -22,6 +24,7 @@
   --h2-font-size: 33px;
   --big-font-size: 19px;
   --normal-font-size: 16px;
+  --font-mulish-bold: mulishbold;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -223,6 +226,9 @@ button {
   right: 0;
   background: var(--violet-color);
   z-index: -1;
+}
+.home__text-title {
+  /* font-family: mulishbold !important; */
 }
 
 .btn {
@@ -1527,6 +1533,7 @@ button {
   background-color: var(--black-color);
   border-radius: 16px;
   padding: 24px 37px;
+  margin: 170px auto 40px;
 }
 .signin__header {
   display: flex;
@@ -1549,6 +1556,12 @@ button {
 .form__password-confirm {
   margin: 16px 0 0;
 }
+.form__password-signup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .input__password-wrapper {
   width: 100%;
   display: flex;
@@ -1583,9 +1596,7 @@ button {
 .eye-hide {
   display: none;
 }
-.form__password-confirm, .form__password.hide .eye-hide {
-  display: block;
-}
+
 .form__password.hide .eye-see {
   display: none;
 
@@ -1593,9 +1604,7 @@ button {
 .input:focus {
   outline: 1px solid var(--green-color);
 }
-.form__password {
-  flex-direction: column;
-}
+
 .form__password.error:focus-within {
   outline: 1px solid var(--green-color);
 }
@@ -1699,7 +1708,44 @@ button {
   display: flex;
   align-items: center;
 }
-
+.politic {
+  margin: 71px auto 47px;
+}
+.politic h2 {
+  margin: 0 0 36px;
+  color: #DDD9D9;
+  line-height: 41px;
+letter-spacing: 0.012em;
+}
+.politic p {
+  color: #DDD9D9;
+  font-size: var(--normal-font-size);
+  line-height: 150%;
+}
+.form__password-signup .eye-see{
+  display: block;
+}
+.form__password-confirm.hide .eye-see {
+  display: none;
+}
+.form__password-confirm.hide .eye-hide {
+  display: block;
+}
+.form__password-signup .eye-see{
+  display: block;
+}
+.form__password-signup.hide .eye-see {
+  display: none;
+}
+.form__password-signup.hide .eye-hide {
+  display: block;
+}
+.deals-progress-fill_confirm {
+  width: 50%;
+}
+.deals-progress-fill_paid {
+  width: 100%;
+}
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
   .steps__arrow-active {
