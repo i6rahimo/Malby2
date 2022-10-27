@@ -1226,7 +1226,7 @@ background: var(--green-color);
   font-size: var(--big-font-size);
   line-height: 23px;
 }
-.deals-progress {
+.deals-progress.deals-progress {
   width: 445px;
   max-width: 100%;
   height: 9px;
@@ -1884,12 +1884,19 @@ letter-spacing: 0.012em;
 }
 .deals__status-banner.crush .deals-status-crush {
   display: block;
+  display: flex;
+  align-items: center;
 }
+
 .deals__banner.crush .deal__banner-text:nth-child(1) {
   display: none;
 }
 
 .red {
+  font-size: var(--big-font-size);
+  display: flex;
+  align-items: center;
+  gap: 7px;
   color: #FC0101;
 }
 /* ========= PUT ================ */
