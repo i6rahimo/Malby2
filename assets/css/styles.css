@@ -821,7 +821,7 @@ background: var(--green-color);
   text-align: center;
 }
 .stages__title-title {
-  margin: 0 0 24px;
+  margin: 0 0 14px;
   font-size: 28px;
 }
 .stages__title-subtitle {
@@ -1967,7 +1967,10 @@ letter-spacing: 0.012em;
   }
 }
 @media (max-width: 961px){
-  .deals__sum-create, .deals__result-btns  {
+  .deals__result-btns {
+    justify-content: center;
+  }
+  .deals__sum-create, .settings-btn  {
     margin: 24px auto 24px;
   }
   .deals-ul {
