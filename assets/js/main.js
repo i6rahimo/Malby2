@@ -1,4 +1,5 @@
-
+window.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
 function tabBtn() {
 
     const btn = document.querySelectorAll('.can__item');
@@ -124,111 +125,34 @@ const swiper = new Swiper('.swiper', {
       e.addEventListener('click', ()=> {
         // const oldUrl = document.referrer;
         // window.history.back()
-        history.go(-1);
+        window.history.go(-1);
 return false;
       })
-  })
+  });
 
-   
-  function showPasswordSign() {
-    const eye = document.querySelector('.see-password-signin'),
-          input = document.querySelector('#user_password-signin'),
-          formPassword = document.querySelector('.form__password');
+ 
 
-          eye.addEventListener('click', ()=> {
-            if(input.type === 'password') {
-                input.type = 'text'
-              } else {
-                  input.type = 'password'
-              }
-            formPassword.classList.toggle('hide')
-          })
-                  }
-showPasswordSign();
-function showPasswordSignUp() {
-    const eye = document.querySelector('.see-password-signup'),
-          input = document.querySelector('#user_password'),
-          formPassword = document.querySelector('.form__password-signup');
+  function statusDeals() {
+    const btnStatus = document.querySelectorAll('.deals-btn-arbitraj'),
+          statusProgressBar = document.querySelectorAll('.deals-progress')
+          statusText = document.querySelectorAll('.deals__banner');
 
-          eye.addEventListener('click', ()=> {
-            if(input.type === 'password') {
-                input.type = 'text'
-              } else {
-                  input.type = 'password'
-              }
-            formPassword.classList.toggle('hide')
-          })
-                  }
-showPasswordSignUp() 
-function showPasswordConfirm() {
-  const eye = document.querySelector('.see-password-confirm'),
-          input = document.querySelector('#user_password-confirm'),
-          formPassword = document.querySelector('.form__password-confirm');
+    btnStatus.forEach(e=> {
+      e.addEventListener('click', element => {
+        statusProgressBar.forEach(e=> {
+          e.classList.toggle('crush')
+        })
+        statusText.forEach(item=> {item.classList.toggle('crush')})
+      })
+    })
+  }
 
-          eye.addEventListener('click', ()=> {
-            if(input.type === 'password') {
-                input.type = 'text'
-              } else {
-                  input.type = 'password'
-              }
-              formPassword.classList.toggle('hide')
-          })
-                  
-                }
-showPasswordConfirm() 
+  statusDeals()
 
-function passwordEquality() {
 
-}
 
-// function checkPassword() {
-//     const password = document.querySelector('#user_password');
-//     const formPassword = document.querySelector('.form__password');
-//     const forError = document.querySelector('.form-error')
-//     // password.value;
-//     console.log(password);
-//     password.addEventListener('input', e => {
-//         console.log(password.value)
-//         if(!password.value === '123123' ) {
-//             formPassword.classList.add('error')
-//         }else {
-//             formPassword.classList.remove('error')
-//         }
-//         console.log(forError);
-//     })
-//     // console.log(innerInput);
-// }
-// checkPassword()
 
-// function sighupPassword() {
-//   const eye = document.querySelector(".see-password-confirm");
-//   const formPassword = document.querySelector('.form__password-confirm');
-//   const input = document.querySelector('#user_password')
-//   eye.addEventListener('click', ()=> {
 
-//       if(item.type === 'password') {
-//           item.type = 'text'
-//         } else {
-//             item.type = 'password'
-//         }
-//     formPassword.classList.toggle('hide')
-//     console.log(formPassword);
-//   })
-// }
-// sighupPassword()
-// function validate() {
-//   const form = document.querySelector('#signin__form')
-//   // console.log(password);
-//   form.addEventListener('submit', ()=> {
-//     const password = document.querySelector('.input__password-wrapper input').value
-//     console.log(password);
-//     if(!password === "") {
-//       console.log('qwe');
-//     }else {
-//       const forerror = document.querySelector('.form__password')
-//       // console.log('pppppppppp');
-//     }
-//   })
-// }
 
-// validate()
+
+});

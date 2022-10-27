@@ -540,7 +540,7 @@ letter-spacing: 0.012em;
   margin: 0 auto;
   align-items: center;
   justify-content: center ;
-  z-index: -1;
+  z-index: 1;
 }
 .swiper-scrollbar  {
   display: flex;
@@ -549,6 +549,7 @@ letter-spacing: 0.012em;
 }
 .swiper-wrapper {
   width: 100%;
+  z-index: -1;
 }
 .swiper-slide {
   user-select: none;
@@ -581,6 +582,7 @@ letter-spacing: 0.012em;
   align-items: flex-start; 
 }
 .swiper-card-up p {
+
   font-weight: var(--font-bold);
   font-size: var(--normal-font-size);
 }  
@@ -1785,32 +1787,74 @@ letter-spacing: 0.012em;
   line-height: 150%;
 }
 
-.form__password-signup .eye-hide{
+.see-password-signin .eye-hide-login{
   fill: #fff;
   display: none;
 }
-.form__password-signup.hide .eye-hide {
-  display: block;
-}
-.form__password-signup.hide .eye-see {
+.see-password-signin.hide .eye-see-login{
+  fill: #fff;
   display: none;
+}
+.see-password-signin.hide .eye-hide-login{
+  fill: #fff;
+  display: block;
 }
 
-#form__password-confirm .eye-hide-confirm {
+
+
+
+.see-password-signup .eye-hide-signup{
   fill: #fff;
-  /* opacity: 0; */
   display: none;
 }
-#form__password-confirm.hide .eye-hide-confirm {
+.see-password-signup.hide .eye-see-signup{
   fill: #fff;
-  /* opacity: 0; */
+  display: none;
+}
+.see-password-signup.hide .eye-hide-signup{
+  fill: #fff;
   display: block;
 }
-#form__password-confirm.hide .eye-see-confirm {
+
+
+
+.see-password-confirm .eye-hide-confirm{
   fill: #fff;
-  /* opacity: 0; */
   display: none;
 }
+.see-password-confirm.hide .eye-see-confirm{
+  fill: #fff;
+  display: none;
+}
+.see-password-confirm.hide .eye-hide-confirm{
+  fill: #fff;
+  display: block;
+}
+.user_password-signup {
+  color: var(--white-color);
+  background-color: var(--black-light);
+}
+
+.see-password-settings .eye-see-settings{
+  fill: #fff;
+  display: none;
+}
+.see-password-settings.hide .eye-hide-settings{
+  fill: #fff;
+  display: none;
+}
+.see-password-settings.hide .eye-see-settings{
+  fill: #fff;
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 .deals-progress-fill_confirm {
@@ -1828,6 +1872,25 @@ letter-spacing: 0.012em;
 }
 .deals-ul {
   margin: 0 35px 0 0;
+}
+.deals-progress.crush {
+  background-color: #FC0101;
+}
+.deals-progress.crush .deals-progress-fill {
+  background-color: #FC0101;
+}
+.deals__banner .deal__banner-text:nth-child(2) {
+  display: none;
+}
+.deals__status-banner.crush .deals-status-crush {
+  display: block;
+}
+.deals__banner.crush .deal__banner-text:nth-child(1) {
+  display: none;
+}
+
+.red {
+  color: #FC0101;
 }
 /* ========= PUT ================ */
 
@@ -1893,7 +1956,6 @@ letter-spacing: 0.012em;
     align-items: center;
     justify-content: flex-start;
     background-color: var(--black-light);
-    z-index: 1;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -1903,6 +1965,7 @@ letter-spacing: 0.012em;
     transition: transform .4s ease;
   }
   .header {
+    z-index: 9999999999;
     overflow-x: hidden;
   }
   .header__ul:nth-child(1) {
@@ -1921,6 +1984,9 @@ letter-spacing: 0.012em;
   .header__nav.active {
     transform: translateX(0%);
     transition: transform .4s ease;
+  }
+  .header__burger.active {
+    position: fixed;
   }
   .header__burger.active span:nth-child(2) {
     margin-left: 100px;
