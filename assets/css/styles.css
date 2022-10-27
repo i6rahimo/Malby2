@@ -1612,7 +1612,9 @@ background: var(--green-color);
   color: var(--white-color);
   background-color: var(--black-light);
 }
- 
+ .deals-progress-fill_end {
+  width: 100%;
+ }
 .input__password-wrapper {
   width: 100%;
   display: flex;

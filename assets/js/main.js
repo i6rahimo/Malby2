@@ -130,8 +130,22 @@ return false;
   })
 
    
+  function showPasswordSign() {
+    const eye = document.querySelector('.see-password-signin'),
+          input = document.querySelector('#user_password-signin'),
+          formPassword = document.querySelector('.form__password');
 
-function showPasswordSign() {
+          eye.addEventListener('click', ()=> {
+            if(input.type === 'password') {
+                input.type = 'text'
+              } else {
+                  input.type = 'password'
+              }
+            formPassword.classList.toggle('hide')
+          })
+                  }
+showPasswordSign();
+function showPasswordSignUp() {
     const eye = document.querySelector('.see-password-signup'),
           input = document.querySelector('#user_password'),
           formPassword = document.querySelector('.form__password-signup');
@@ -145,7 +159,7 @@ function showPasswordSign() {
             formPassword.classList.toggle('hide')
           })
                   }
-showPasswordSign() 
+showPasswordSignUp() 
 function showPasswordConfirm() {
   const eye = document.querySelector('.see-password-confirm'),
           input = document.querySelector('#user_password-confirm'),
