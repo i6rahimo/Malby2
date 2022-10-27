@@ -105,13 +105,18 @@ const swiper = new Swiper('.swiper', {
     historyTabsBtn.forEach(e => {
         e.addEventListener('click', ()=> {
             let tabId = e.getAttribute('data-tab');
-            const curretntTab = document.querySelector(tabId)
+            const curretntTab = document.querySelectorAll(tabId)
             
             
             tabsItem.forEach((e)=> {
                 e.classList.remove('active')                
             })
-            curretntTab.classList.add('active')
+            curretntTab.forEach(e => {
+              e.classList.remove('active')
+            })
+            curretntTab.forEach(e => {
+              e.classList.add('active')
+            })
         })
     })
   }
@@ -148,8 +153,6 @@ return false;
   }
 
   statusDeals()
-
-
 
 
 
