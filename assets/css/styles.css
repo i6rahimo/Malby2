@@ -1020,10 +1020,11 @@ background: var(--green-color);
   background-color: var(--black-light);
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 24px;
   max-width: 100%;
+  gap: 30px;
 }
 .deals__banner-wrapper {
   margin: 40px auto 36px;
@@ -1105,6 +1106,9 @@ background: var(--green-color);
   font-size: 12px;
   font-weight: var(--font-regular);
   line-height: 15px;
+}
+.deal-textarea  {
+  resize: none;
 }
 
 .deal-textarea, .deal-textarea-explain:focus {
@@ -1889,6 +1893,9 @@ letter-spacing: 0.012em;
 }
 
 .deals__banner.crush .deal__banner-text:nth-child(1) {
+  display: none;
+}
+.deals__banner.crush .deals-btn-arbitraj {
   display: none;
 }
 
