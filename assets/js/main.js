@@ -44,7 +44,7 @@ accordionOpen()
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     // slidesPerView: 4,
     // spaceBetween: 30,
     centeredSlides:true,

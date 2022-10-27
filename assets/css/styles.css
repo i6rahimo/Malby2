@@ -1252,7 +1252,10 @@ background: var(--green-color);
   background-position-y: 20px;
 
 }
-
+.deals__banner-end {
+  width: 1000px;
+  margin: auto;
+}
 .deals-progress-fill {
   position: absolute;
   left: 0;
@@ -1524,6 +1527,7 @@ background: var(--green-color);
   font-weight: var(--font-bold);
 }
 .history__transfers  {
+  max-width: 100%;
   /* margin: 0 auto 130px; */
 }
 .history__transfer-btn {
@@ -1538,6 +1542,10 @@ background: var(--green-color);
   width: 668px;
   max-width: 100%;
   gap: 16px;
+}
+.history__transfer-form label {
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .history__transfer-form input {
   color: var(--white-color);
@@ -1580,7 +1588,7 @@ background: var(--green-color);
   width: 390px;
   background-color: var(--black-color);
   border-radius: 16px;
-  margin: 170px auto 40px;
+  margin: 120px auto 40px;
   max-width: 100%;
 }
 .signup__form {
@@ -1959,6 +1967,9 @@ letter-spacing: 0.012em;
   }
 }
 @media (max-width: 961px){
+  .deals__sum-create, .deals__result-btns  {
+    margin: 24px auto 24px;
+  }
   .deals-ul {
     margin: 0;
   }
@@ -2027,7 +2038,7 @@ letter-spacing: 0.012em;
     justify-content: center;
   }
   .home__text {
-    margin: 60px 0 43px;
+    margin: 30px 0 43px;
   }
   .home__text-btns {
     flex-wrap: wrap;
