@@ -1605,7 +1605,14 @@ background: var(--green-color);
   justify-content: space-between;
   width: 100%;
 }
+.form__password-signup input {
 
+}
+#user_password {
+  color: var(--white-color);
+  background-color: var(--black-light);
+}
+ 
 .input__password-wrapper {
   width: 100%;
   display: flex;
@@ -1641,16 +1648,9 @@ background: var(--green-color);
   color: var(--white-color);
 }
 
-.eye-hide {
-  display: none;
-}
 
-.form__password.hide .eye-see {
-  display: none;
-}
-.form__password.hide .eye-hide {
-  display: block;
-}
+
+
 .input:focus {
   outline: 1px solid var(--green-color);
 }
@@ -1782,24 +1782,35 @@ letter-spacing: 0.012em;
   font-size: var(--normal-font-size);
   line-height: 150%;
 }
-.form__password-signup .eye-see{
-  display: block;
-}
-.form__password-confirm.hide .eye-see {
-  display: none;
-}
-.form__password-confirm.hide .eye-hide {
-  display: block;
-}
-.form__password-signup .eye-see{
-  display: block;
-}
-.form__password-signup.hide .eye-see {
+
+.form__password-signup .eye-hide{
+  fill: #fff;
   display: none;
 }
 .form__password-signup.hide .eye-hide {
   display: block;
 }
+.form__password-signup.hide .eye-see {
+  display: none;
+}
+
+#form__password-confirm .eye-hide-confirm {
+  fill: #fff;
+  /* opacity: 0; */
+  display: none;
+}
+#form__password-confirm.hide .eye-hide-confirm {
+  fill: #fff;
+  /* opacity: 0; */
+  display: block;
+}
+#form__password-confirm.hide .eye-see-confirm {
+  fill: #fff;
+  /* opacity: 0; */
+  display: none;
+}
+
+
 .deals-progress-fill_confirm {
   width: 50%;
 }

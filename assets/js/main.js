@@ -131,32 +131,37 @@ return false;
 
    
 
-function showPassword() {
-    const eye = document.querySelectorAll('.see-password'),
-          input = document.querySelectorAll('#user_password');
-        //   formPassword = document.querySelectorAll('#form__password');
-          eye.forEach((e)=> {
-            const eyes = e.currentTarget;
-              e.addEventListener('click', (element)=> {
-                  input.forEach((item)=> {
-                      if(item.type === 'password') {
-                          item.type = 'text'
-                        } else {
-                            item.type = 'password'
-                        }
-                    })
-                    console.log(eyes);
-                    const formPassword = document.querySelectorAll('.form__password');
-                    // formPassword.classList.toggle('hide')
-                    // const formPasswordConfirm = document.querySelector('.form__password');
-                    formPassword.forEach(e => {
-                        e.classList.toggle('hide')
-                    })
-            })
-        })   
-}
-showPassword() 
+function showPasswordSign() {
+    const eye = document.querySelector('.see-password-signup'),
+          input = document.querySelector('#user_password'),
+          formPassword = document.querySelector('.form__password-signup');
 
+          eye.addEventListener('click', ()=> {
+            if(input.type === 'password') {
+                input.type = 'text'
+              } else {
+                  input.type = 'password'
+              }
+            formPassword.classList.toggle('hide')
+          })
+                  }
+showPasswordSign() 
+function showPasswordConfirm() {
+  const eye = document.querySelector('.see-password-confirm'),
+          input = document.querySelector('#user_password-confirm'),
+          formPassword = document.querySelector('.form__password-confirm');
+
+          eye.addEventListener('click', ()=> {
+            if(input.type === 'password') {
+                input.type = 'text'
+              } else {
+                  input.type = 'password'
+              }
+              formPassword.classList.toggle('hide')
+          })
+                  
+                }
+showPasswordConfirm() 
 
 function passwordEquality() {
 
