@@ -155,8 +155,8 @@ button {
   background: var(--black-light);
   z-index: -1;
 }
-.header__nav {
-  width: 880px;
+.header__nav.header__nav {
+  width: 980px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1535,6 +1535,9 @@ background: var(--green-color);
 }
 .history {
   margin: 0 auto 130px;
+}
+.history__btn {
+  margin: 24px auto 24px;
 }
 .history__transfer-form {
   display: flex;

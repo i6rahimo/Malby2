@@ -14,21 +14,20 @@
                 <a href="../../index.html" class="header__logo"><span class="green">M</span>elby</a>
        
             </div>
-            <nav class="header__nav deals-nav">
+            <nav class="header__nav deals-nav header__nav-copy">
                 <ul class="header__ul deals-ul">
                     <li class="header__li">
                         <a href="for-whom.html" class="header__link">Для кого</a>
                     </li>
-                    <li class="header__li">
-                        <a href="help.html" class="header__link">Помощь</a>
+                    <!-- <li class="header__li">
+                        <a href="/assets/pages/help.html" class="header__link">Помощь</a>
                     </li>
                     <li class="header__li">
-                        <a href="sertificat.html" class="header__link">Сертификаты</a>
-                    </li>
+                        <a href="/assets/pages/sertificat.html" class="header__link">Сертификаты</a>
+                    </li> -->
                     <li class="header__li">
                         <a href="../../index.html#review" class="header__link">Отзывы</a>
                     </li>
-                  
                 </ul>
                 <ul class="header__ul">
                     <li class="header__li">
@@ -73,7 +72,7 @@
         <section class="deals__banner-wrapper container">
             <div class="core__wrapper">
             <div class="deals__banner deals__status-banner">
-                <p class="deal__banner-text deal__banner-text-status">Мой счёт: <span>20500<span class="rubl">&#8381</span></span></p>
+                <p class="deal__banner-text deal__banner-text-status">Мой счет: <span>20500<span class="rubl">&#8381</span></span></p>
                 <a href="put-core.html" class="btn ">Пополнить счёт</a>
             </div>
             <div class="deals__sum-line core-line"></div>
@@ -90,105 +89,98 @@
         <section class="history container">
             <p class="history__title">История</p>
             <div class="can__items history__items">
-                <div class="can__item history__item active" data-tab="#history">История пополнений</div>
-                <div class="can__item history__item " data-tab="#takes">Выводы по реквизитам</div>
-                <div class="can__item history__item" data-tab="#transfer">Перевод пользователю</div>
-            
+                <a href="core.html" class="can__item history__item stop-active transfer-hostory">История пополнений</a>
+                <a href="core.html" class="can__item history__item stop-active active">Выводы по реквизитам</a>
+                <div class="can__item history__item ">Перевод пользователю</div>
             </div>
-            <div class="history__takes history__history" id="history"></div>
-            <div class="history__takes " id="takes">
-                <div class="history__take history__take-first">
-                    <div class="history__take-id">
+            
+            <!-- <div class="hostory__takes">
+                <div class="hostory__take hostory__take-first">
+                    <div class="hostory__take-id">
                         <p>ID</p>
                         <span>110</span>
                     </div>
-                    <div class="history__take-date">
+                    <div class="hostory__take-date">
                         <p>Дата</p>
                         <span>2022-09-18 19:50</span>
                     </div>
-                    <div class="history__take-type">
+                    <div class="hostory__take-type">
                         <p>Тип реквизита</p>
                         <span>Сбербанк</span>
                     </div>
-                    <div class="history__take-number">
+                    <div class="hostory__take-number">
                         <p>Номер счета</p>
                         <span>2019232193</span>
                     </div>
-                    <div class="history__take-sum">
+                    <div class="hostory__take-sum">
                         <p>Сумма</p>
-                        <span>50000<span class="rubl">&#8381</span></span>
+                        <span>50000Р</span>
                     </div>
-                    <div class="history__take-status">
+                    <div class="hostory__take-status">
                         <p>Статус</p>
-                        <span class="green">Одобрено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
+                        <span class="green">Оплачено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
                     </div>
                 </div>
                 <div class="deals__sum-line history-line"></div>
-                <div class="history__take history__take-second">
-                    <div class="history__take-id">
+                <div class="hostory__take hostory__take-second">
+                    <div class="hostory__take-id">
                         <p>ID</p>
                         <span>110</span>
                     </div>
-                    <div class="history__take-date">
+                    <div class="hostory__take-date">
                         <p>Дата</p>
                         <span>2022-09-18 19:50</span>
                     </div>
-                    <div class="history__take-type">
+                    <div class="hostory__take-type">
                         <p>Тип реквизита</p>
                         <span>Сбербанк</span>
                     </div>
-                    <div class="history__take-number">
+                    <div class="hostory__take-number">
                         <p>Номер счета</p>
                         <span>2019232193</span>
                     </div>
-                    <div class="history__take-sum">
+                    <div class="hostory__take-sum">
                         <p>Сумма</p>
-                        <span>50000<span class="rubl">&#8381</span></span>
+                        <span>50000Р</span>
                     </div>
-                    <div class="history__take-status">
+                    <div class="hostory__take-status">
                         <p>Статус</p>
-                        <span class="green">Одобрено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
+                        <span class="green">Оплачено <img src="/assets/img/deals-status.svg" alt="Оплачено"></span>
                     </div>
                 </div>
-                <a href="take-transfer.html" class="btn history__btn">Создать перевод</a>
-            </div> 
-            <div class="history__takes history__transfers" id="transfer">
-                <a href="transfer.html" class="btn history__transfer-btn">Создать перевод</a>
-                <div class="history__take history__transfer  history__take-first">
-                    <div class="history__transfer-id">
-                        <p>ID</p>
-                        <span>110</span>
-                    </div>
-                    <div class="history__transfer-date">
-                        <p>Дата</p>
-                        <span>2022-09-18 19:50</span>
-                    </div>
-                    <div class="history__transfer-receiver">
-                        <p>Получатель</p>
-                        <span>Melo</span>
-                    </div>
-                    <div class="history__transfer-sum">
-                        <p>Сумма</p>
-                        <span>50<span class="rubl">&#8381</span></span>
-                    </div>
-                    <div class="history__transfer-status">
-                        <p>Статус</p>
-                        <span class="green">Одобрено <img src="/assets/img/deals-status.svg" alt="Одобрено"></span>
-                    </div>
-                </div>
-                <div class="deals__sum-line history-line"></div>
+            </div> -->
+            <!-- <div class="history__takes history__history" id="history"></div> -->
+            <div class="hostory__takes history__transfers">
+                <form class="history__transfer-form">
+                    <label>
+                        Платежная система
+                        <input type="text" class="history__transfer-user_login input" placeholder="">
+                    </label>
+                    <label>
+                        Номер карты/кошелька
+                            <input type="text" class=" input" placeholder="">
+                    </label>
+                    <label>
+                        Сумма
+                            <input type="text" class=" input" placeholder="">
+                    </label>
+                    <button class="btn history__transfer-send">Вывести</button>
+                </form>
             </div>
         </section>
     </main>
     <footer class="footer section deals-footer">
         <div class="footer__wrapper container">
             <div class="footer__main">
-                <a href="../../index.html" class="footer__logo header__logo"><span class="green">M</span>elby</a>
                 <div class="footer__links">
-                    <a href="for-whom.html" class="footer__link header__link">Для кого</a>
-                    <a href="help.html" class="footer__link header__link">Помощь</a>
-                    <a href="sertificat.html" class="footer__link header__link">Сертификаты</a>
-                    <a href="../../index.html#review" class="footer__link header__link">Отзывы</a>
+                    <a href="../../index.html" class="footer__logo header__logo"><span class="green">M</span>elby</a>
+                    <div class="footer__links-link">
+
+                        <a href="for-whom.html" class="footer__link header__link">Для кого</a>
+                        <!-- <a href="help.html" class="footer__link header__link">Помощь</a> -->
+                        <a href="../../index.html#review" class="footer__link header__link">Отзывы</a>
+                        <a href="howitworks.html" class="footer__link header__link">Как это работает?</a>
+                    </div>
                 </div>
                 <div class="footer__images">
                     <img src="/assets/img/footer1.svg" alt="Webmoney">
@@ -203,7 +195,6 @@
     </footer>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
 
     <script src="../js/main.js"></script>
 </body>
