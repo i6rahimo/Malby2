@@ -155,7 +155,7 @@ button {
   background: var(--black-light);
   z-index: -1;
 }
-.header__nav.header__nav {
+.header__nav {
   width: 980px;
   max-width: 100%;
   display: flex;
@@ -780,7 +780,7 @@ background: var(--green-color);
 }
 .steps__item {
   width: 385px;
-  max-width: 100%;
+  max-width: 130%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1953,6 +1953,9 @@ letter-spacing: 0.012em;
 }
 .login-password {
   max-width: 100%;
+}
+.header__nav-index {
+  width: 824px;
 }
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 990px) {
