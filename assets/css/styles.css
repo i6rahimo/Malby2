@@ -2166,3 +2166,9 @@ letter-spacing: 0.012em;
   font-weight: var(--font-regular) !important;
 }
 
+@media (max-width: 600px) {
+  .settings-form label{
+    column-gap: 60px;
+    /* flex-direction: column; */
+  }
+}
